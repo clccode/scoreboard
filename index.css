@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    background-color: #073763;
+    color: #eeeeee;
+    font-family: Courier New, Courier, monospace;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;   
+}
+
+/* Score buttons and scoreboard */
+
+.btn {
+    background: #073763;
+    color: #eeeeee;
+    font-family: Courier New, Courier, monospace;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+}
+
+.team {
+    text-align: center;
+}
+
+.score {
+    background-color: black;
+    color: red;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+
+/* Reset score */
+
+#reset {
+    margin: 10px;
+    padding: 5px 5px;
+}
+
+#new-game {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
