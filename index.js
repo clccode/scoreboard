@@ -1,10 +1,10 @@
 // grab the home and guest scores by id
 let homeScore = document.getElementById("home-score")
-let guestScore = document.getElementById("guest-score")
+let awayScore = document.getElementById("away-score")
 
 // set home points and guest points to zero
 let homePoints = 0
-let guestPoints = 0
+let awayPoints = 0
 
 // To add home score
 function homePlusOne() {
@@ -19,23 +19,23 @@ function homePlusThree() {
     homeScore.textContent = homePoints += 3
 }
 
-// To add guest score
-function guestPlusOne() {
-    guestScore.textContent = guestPoints += 1
+// To add away score
+function awayPlusOne() {
+    awayScore.textContent = awayPoints += 1
 }
 
-function guestPlusTwo() {
-    guestScore.textContent = guestPoints += 2
+function awayPlusTwo() {
+    awayScore.textContent = awayPoints += 2
 }
 
-function guestPlusThree() {
-    guestScore.textContent = guestPoints += 3
+function awayPlusThree() {
+    awayScore.textContent = awayPoints += 3
 }
 
 // To reset the score to zero
 function setZero() {
     homePoints = 0
-    guestPoints = 0
+    awayPoints = 0
     homeScore.textContent = homePoints;
-    guestScore.textContent = guestPoints;
+    awayScore.textContent = awayPoints;
 }
