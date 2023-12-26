@@ -3,6 +3,7 @@ body {
     background-color: #073763;
     color: #eeeeee;
     font-family: Courier New, Courier, monospace;
+    text-align: center;
 }
 
 h1 {
@@ -29,12 +30,30 @@ h1 {
 }
 
 .score {
-    background-color: black;
-    color: red;
+    background: #080001;
+    color: #F94F6D;
     text-align: center;
     padding: 10px 5px;
 }
 
+/* Period section */
+.period {
+    display: inline-block;
+}
+
+.period-display {
+    background: #080001;
+    margin: 2px auto;
+    padding: 10px 25px;
+    font-family: Courier New, Courier, monospace;
+    color: #F94F6D;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.period-btn {
+    margin: 5px 0;
+}
 
 /* Reset score */
 

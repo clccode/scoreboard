@@ -1,41 +1,54 @@
 // grab the home and guest scores by id
-let homeScore = document.getElementById("home-score")
-let awayScore = document.getElementById("away-score")
+let homeScoreEl = document.getElementById("home-score")
+let awayScoreEl = document.getElementById("away-score")
+let periodEl = document.getElementById("period-display")
 
 // set home points and guest points to zero
 let homePoints = 0
 let awayPoints = 0
+let period = 1
 
 // To add home score
 function homePlusOne() {
-    homeScore.textContent = homePoints += 1
+    homeScoreEl.textContent = homePoints += 1
 }
 
 function homePlusTwo() {
-    homeScore.textContent = homePoints += 2
+    homeScoreEl.textContent = homePoints += 2
 }
 
 function homePlusThree() {
-    homeScore.textContent = homePoints += 3
+    homeScoreEl.textContent = homePoints += 3
 }
 
 // To add away score
 function awayPlusOne() {
-    awayScore.textContent = awayPoints += 1
+    awayScoreEl.textContent = awayPoints += 1
 }
 
 function awayPlusTwo() {
-    awayScore.textContent = awayPoints += 2
+    awayScoreEl.textContent = awayPoints += 2
 }
 
 function awayPlusThree() {
-    awayScore.textContent = awayPoints += 3
+    awayScoreEl.textContent = awayPoints += 3
+}
+
+// add and subtract period
+function perPlusOne() {
+    periodEl.textContent = period += 1
+}
+
+function perMinusOne() {
+    periodEl.textContent = period -= 1
 }
 
 // To reset the score to zero
 function newGame() {
     homePoints = 0
     awayPoints = 0
-    homeScore.textContent = homePoints;
-    awayScore.textContent = awayPoints;
+    period = 1
+    homeScoreEl.textContent = homePoints
+    awayScoreEl.textContent = awayPoints
+    periodEl.textContent = period
 }
