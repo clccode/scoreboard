@@ -33,7 +33,7 @@ function awayPlusThree() {
 }
 
 // To reset the score to zero
-function setZero() {
+function newGame() {
     homePoints = 0
     awayPoints = 0
     homeScore.textContent = homePoints;
